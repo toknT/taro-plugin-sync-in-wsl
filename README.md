@@ -4,7 +4,7 @@
 
 ## 用法
 
-- `git clone`到本地
+- `yarn add -D taro-plugin-sync-in-wsl`
 
 - 在 taro 的[配置](https://taro-docs.jd.com/taro/docs/config)下增加插件,以抖音小程序为例如:
 
@@ -29,4 +29,4 @@ module.exports = {
 
 ## todo
 
-- 发布到npm
+- typescript
