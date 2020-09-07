@@ -18,7 +18,7 @@ module.exports = {
   h5: {},
   plugins: [
     [
-      "/path/to/git/clone/dir/taro-plugin-sync-in-wsl/",
+      "taro-plugin-sync-in-wsl",
       { dists: { tt: "/mnt/d/path/in/windows" } },
     ],
   ],
@@ -26,7 +26,3 @@ module.exports = {
 ```
 
 - 执行taro的 `yarn dev:tt` 或其他
-
-## todo
-
-- typescript
