@@ -1,5 +1,5 @@
 import { exec, which, echo } from 'shelljs'
-export default (ctx, options) => {
+export default (ctx: any, options: any) => {
     ctx.onBuildFinish(() => {
         let platform = ctx.runOpts.platform
         let target = options.dists[platform]

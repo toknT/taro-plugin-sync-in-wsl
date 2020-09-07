@@ -1,11 +1,15 @@
 {
   "name": "taro-plugin-sync-in-wsl",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "sync files in wsl2's filesystem to windows's filesystem",
   "main": "main.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "taro",
