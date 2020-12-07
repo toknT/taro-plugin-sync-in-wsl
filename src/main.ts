@@ -5,7 +5,7 @@ export default (ctx: any, options: any) => {
     let target = options.dists[platform]
     if (target) {
       if (which('sync')) {
-        let execShell = `rsync -av ${ctx.paths.outputPath} ${target}`
+        let execShell = `rsync -az ${ctx.paths.outputPath} ${target}`
         exec(execShell)
       } else {
         echo('sync not found')
