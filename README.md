@@ -19,7 +19,15 @@ module.exports = {
   plugins: [
     [
       "taro-plugin-sync-in-wsl",
-      { dists: { tt: "/mnt/d/path/in/windows" } },
+      { 
+        weapp: [{ 
+          sourcePath: "dist",
+          outputPath:"/mnt/d/path/in/windows/Code/dist"
+        },{ 
+          sourcePath: "cloud",
+          outputPath:"/mnt/d/path/in/windows/Code/cloud"
+        }]
+      },
     ],
   ],
 };
