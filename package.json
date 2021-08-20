@@ -19,7 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tarojs/service": "^3.1.4",
+    "@tarojs/service": "^3.3.3",
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
