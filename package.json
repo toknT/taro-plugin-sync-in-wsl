@@ -1,6 +1,6 @@
 {
   "name": "taro-plugin-sync-in-wsl",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "sync files in wsl2's filesystem to windows's filesystem",
   "main": "main.js",
   "files": [
