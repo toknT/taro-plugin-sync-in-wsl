@@ -4,9 +4,9 @@
 
 ## 用法
 
-- `yarn add -D taro-plugin-sync-in-wsl`
+- `npm i -D taro-plugin-sync-in-wsl`
 
-- 在 taro 的[配置](https://taro-docs.jd.com/taro/docs/config)下增加插件,以抖音小程序为例如:
+- 在 taro 的[配置](https://taro-docs.jd.com/taro/docs/config)下增加插件,以微信小程序为例如(tips:输出目录也可以修改成通过环境变量.env 文件获取):
 
 ```js
 module.exports = {
@@ -18,19 +18,27 @@ module.exports = {
   h5: {},
   plugins: [
     [
-      "taro-plugin-sync-in-wsl",
-      { 
-        weapp: [{ 
-          sourcePath: "dist",
-          outputPath:"/mnt/d/path/in/windows/Code/dist"
-        },{ 
-          sourcePath: "cloud",
-          outputPath:"/mnt/d/path/in/windows/Code/cloud"
-        }]
+      'taro-plugin-sync-in-wsl',
+      {
+        weapp: [
+          {
+            sourcePath: 'dist',
+            outputPath: '/mnt/d/path/in/windows/Code/dist',
+          },
+          {
+            sourcePath: 'cloud',
+            outputPath: '/mnt/d/path/in/windows/Code/cloud',
+          },
+        ],
       },
     ],
   ],
-};
+}
 ```
 
-- 执行taro的 `yarn dev:tt` 或其他
+- 执行 taro 的 `npm run dev:weapp` 或其他
+
+## todo
+
+- [ ] npm test
+- [ ] ci + npm publish
