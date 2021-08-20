@@ -1,6 +1,6 @@
 {
   "name": "taro-plugin-sync-in-wsl",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "sync files in wsl2's filesystem to windows's filesystem",
   "main": "main.js",
   "files": [
@@ -19,7 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tarojs/service": "^3.1.4",
+    "@tarojs/service": "^3.3.3",
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
