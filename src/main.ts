@@ -6,7 +6,7 @@ export default (ctx: any, options: any) => {
     if (target) {
       for (let i = 0; i < target.length; i++) {
         if (which('rsync')) {
-          let execShell = `rsync -az --delete ${ctx.paths.appPath}/${target[i].sourcePath} ${target[i].outputPath}`
+          let execShell = `rsync -az ${ctx.paths.appPath}/${target[i].sourcePath} ${target[i].outputPath}`
           exec(execShell)
         } else {
           echo('rsync command not found')

@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [2.0.1] - 2022-06-22
+
+### Fixed
+
+- [自动删除 project.private.config.json](https://github.com/toknT/taro-plugin-sync-in-wsl/issues/7)
+
 ## [2.0.0] - 2021-08-20
 
 ### Added
